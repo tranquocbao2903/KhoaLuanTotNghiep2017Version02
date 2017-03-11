@@ -34,50 +34,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxInterop.AcroPDFLib">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
     </Reference>
     <Reference Include="AxInterop.WMPLib">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.WMPLib.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.WMPLib.dll</HintPath>
     </Reference>
-    <Reference Include="CircularProgressBar, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CircularProgressBar.2.3.0\lib\net35-client\CircularProgressBar.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="CppCodeProvider, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\CppCodeProvider.dll</HintPath>
     </Reference>
     <Reference Include="FastColoredTextbox">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\FastColoredTextbox.dll</HintPath>
-    </Reference>
-    <Reference Include="Interop.AcroPDFLib">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Interop.AcroPDFLib.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Interop.WMPLib">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Interop.WMPLib.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\FastColoredTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zip.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zlib">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zlib.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zlib.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Nemiro.OAuth">
-      <HintPath>..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\Nemiro.OAuth.dll</HintPath>
+    <Reference Include="Nemiro.OAuth, Version=1.12.452.2615, Culture=neutral, PublicKeyToken=cb06320e362d440b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nemiro.OAuth.1.12\lib\net452\Nemiro.OAuth.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Nemiro.OAuth.LoginForms">
-      <HintPath>..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\Nemiro.OAuth.LoginForms.dll</HintPath>
+    <Reference Include="Nemiro.OAuth.LoginForms, Version=1.6.0.2705, Culture=neutral, PublicKeyToken=2656cfe28099e3f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nemiro.OAuth.LoginForms.1.6\lib\net452\Nemiro.OAuth.LoginForms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="NetworkCommsDotNet">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\NetworkCommsDotNet.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\NetworkCommsDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,14 +85,13 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="TabStrip">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\TabStrip.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\TabStrip.dll</HintPath>
     </Reference>
     <Reference Include="Transitions">
-      <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Transitions.dll</HintPath>
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Transitions.dll</HintPath>
     </Reference>
-    <Reference Include="WinFormAnimation, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WinFormAnimation.1.3.0.0\lib\net35-Client\WinFormAnimation.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\WinFormAnimation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

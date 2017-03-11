@@ -15,8 +15,8 @@ namespace TextBasedProgramming
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new SplashScreenForm());
-            //Application.Run(new StartForm());
-            Application.Run(new LoginUserForm());
+            Application.Run(new StartForm());
+            //Application.Run(new LoginUserForm());
             //Application.Run(new RegisterUserForm());
             //Application.Run(new MainForm());
         }
