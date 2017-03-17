@@ -1,16 +1,11 @@
 ﻿using Nemiro.OAuth;
 using Nemiro.OAuth.LoginForms;
+using Patagames.Pdf.Net;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TextBasedProgramming.Properties;
 
@@ -226,16 +221,49 @@ namespace TextBasedProgramming.Forms
                 }
                 else
                 {
-                    saveFileDialog1.FileName = Path.GetFileName(file["path"].ToString());
-                    if (saveFileDialog1.ShowDialog() != DialogResult.OK) { return; }
+                    //saveFileDialog1.FileName = Path.GetFileName(file["path"].ToString());
+                    //if (saveFileDialog1.ShowDialog() != DialogResult.OK) { return; }
 
-                    var web = new WebClient();
-                    web.DownloadProgressChanged += Web_DownloadProgressChanged;
-                    web.DownloadFileAsync(new Uri(String.Format("https://content.dropboxapi.com/1/files/auto/{0}?access_token={1}", file["path"], Properties.Settings.Default.AccessToken)), saveFileDialog1.FileName);
-
+                    //var web = new WebClient();
+                    //web.DownloadProgressChanged += Web_DownloadProgressChanged;
+                    //web.DownloadFileAsync(new Uri(String.Format("https://content.dropboxapi.com/1/files/auto/{0}?access_token={1}", file["path"], Properties.Settings.Default.AccessToken)), saveFileDialog1.FileName);
+                    GetPreviewFile(file["path"].ToString());
                 }
             }
             GetFiles();
         }
+
+        private void GetPreviewFile(String fileName)
+        {
+            loadingProgressBar.Visible = true;
+            OAuthUtility.GetAsync
+            (
+                "https://content.dropboxapi.com/1/previews/auto" + fileName,
+                new HttpParameterCollection
+                {
+                    { "access_token", Settings.Default.AccessToken }
+                },
+                callback: GetPreviewFile_Result
+            );
+        }
+
+        private void GetPreviewFile_Result(RequestResult result)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action<RequestResult>(GetPreviewFile_Result), result);
+                return;
+            }
+
+            //webBrowser1.Document.Write(result.ToString());
+            //webBrowser1.Visible = true;
+            byte[] toBytes = System.Text.ASCIIEncoding.UTF8.GetBytes(result.ToString()); //Encoding.Default.GetBytes(result.ToString());    
+            //webBrowser1.DocumentStream = new MemoryStream(result.ToBinary());
+            PdfCommon.Initialize();
+            pdfViewer1.LoadDocument(result.ToBinary());
+            //webBrowser1.DocumentStream = new MemoryStream(result.ToBinary());
+            //File.WriteAllBytes(@"D:\testpdf.pdf", result.ToBinary());
+        }
+
     }
 }

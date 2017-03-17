@@ -144,7 +144,7 @@
             this.pdfViewer1.Document = null;
             this.pdfViewer1.FormHighlightColor = System.Drawing.Color.Transparent;
             this.pdfViewer1.LoadingIconText = "Loading...";
-            this.pdfViewer1.Location = new System.Drawing.Point(485, 12);
+            this.pdfViewer1.Location = new System.Drawing.Point(278, 12);
             this.pdfViewer1.MouseMode = Patagames.Pdf.Net.Controls.WinForms.MouseModes.Default;
             this.pdfViewer1.Name = "pdfViewer1";
             this.pdfViewer1.Padding = new System.Windows.Forms.Padding(10);
@@ -158,7 +158,7 @@
             this.pdfViewer1.ShowCurrentPageHighlight = true;
             this.pdfViewer1.ShowLoadingIcon = true;
             this.pdfViewer1.ShowPageSeparator = true;
-            this.pdfViewer1.Size = new System.Drawing.Size(558, 464);
+            this.pdfViewer1.Size = new System.Drawing.Size(765, 464);
             this.pdfViewer1.SizeMode = Patagames.Pdf.Net.Controls.WinForms.SizeModes.FitToWidth;
             this.pdfViewer1.TabIndex = 14;
             this.pdfViewer1.TextSelectColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(130)))), ((int)(((byte)(180)))));
