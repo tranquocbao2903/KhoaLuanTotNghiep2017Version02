@@ -33,44 +33,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AxInterop.AcroPDFLib">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
-    </Reference>
-    <Reference Include="AxInterop.WMPLib">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\AxInterop.WMPLib.dll</HintPath>
-    </Reference>
     <Reference Include="CircularProgressBar">
-      <HintPath>..\..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\CircularProgressBar.dll</HintPath>
+      <HintPath>..\packages\CircularProgressBar.2.3.0\lib\net35-client\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="CppCodeProvider, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\CppCodeProvider.dll</HintPath>
     </Reference>
     <Reference Include="FastColoredTextbox">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\FastColoredTextbox.dll</HintPath>
-    </Reference>
-    <Reference Include="Ionic.Zip">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zip.dll</HintPath>
-    </Reference>
-    <Reference Include="Ionic.Zlib">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Ionic.Zlib.dll</HintPath>
+      <HintPath>..\..\..\LIBS\FastColoredTextbox.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\LIBS\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Nemiro.OAuth, Version=1.12.452.2615, Culture=neutral, PublicKeyToken=cb06320e362d440b, processorArchitecture=MSIL">
+    <Reference Include="Nemiro.OAuth">
       <HintPath>..\packages\Nemiro.OAuth.1.12\lib\net452\Nemiro.OAuth.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="Nemiro.OAuth.LoginForms, Version=1.6.0.2705, Culture=neutral, PublicKeyToken=2656cfe28099e3f4, processorArchitecture=MSIL">
+    <Reference Include="Nemiro.OAuth.LoginForms">
       <HintPath>..\packages\Nemiro.OAuth.LoginForms.1.6\lib\net452\Nemiro.OAuth.LoginForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Patagames.Pdf, Version=3.7.4.2704, Culture=neutral, PublicKeyToken=ac74ef388ba35351, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pdfium.Net.SDK.3.7.4\lib\net45\Patagames.Pdf.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NetworkCommsDotNet">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\NetworkCommsDotNet.dll</HintPath>
+    <Reference Include="Patagames.Pdf.WinForms, Version=3.5.4.0, Culture=neutral, PublicKeyToken=ac74ef388ba35351, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pdfium.Net.SDK.3.7.4\lib\net45\Patagames.Pdf.WinForms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Test Dropbox API\Test\TestDropboxAPI\TestDropboxAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Patagames.Pdf.Wpf, Version=3.5.5.0, Culture=neutral, PublicKeyToken=ac74ef388ba35351, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pdfium.Net.SDK.3.7.4\lib\net45\Patagames.Pdf.Wpf.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,14 +76,11 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TabStrip">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\TabStrip.dll</HintPath>
-    </Reference>
     <Reference Include="Transitions">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\Transitions.dll</HintPath>
+      <HintPath>..\..\..\LIBS\Transitions.dll</HintPath>
     </Reference>
     <Reference Include="WinFormAnimation">
-      <HintPath>..\..\..\..\Hoc tap Vi\THUC TAP TOT NGHIEP\CODE\Hands-on V7\Hands-on\bin\Debug\WinFormAnimation.dll</HintPath>
+      <HintPath>..\packages\WinFormAnimation.1.3.0.0\lib\net35-Client\WinFormAnimation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +297,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\page_white_picture48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\pdfium.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\pdfium.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
