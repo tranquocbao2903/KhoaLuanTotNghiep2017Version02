@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PUBLIC_OBJECT
+﻿namespace PUBLIC_OBJECT
 {
-    class ClassRoom
+    public class ClassRoom
     {
+        public int id_class;
+        public string name;
+        public bool status;
+        public string detail;
+        public int capacity;
     }
 }

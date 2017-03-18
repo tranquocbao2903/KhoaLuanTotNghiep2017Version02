@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PUBLIC_OBJECT
+﻿namespace PUBLIC_OBJECT
 {
-    class Exercise
+    public class Exercise
     {
+        public int id_exercise;
+        public string name;
+        public int id_teacher;
+        public string content;
+        public string testcase;
+        public string date;
+        public bool status;
+        public string answer;
     }
 }

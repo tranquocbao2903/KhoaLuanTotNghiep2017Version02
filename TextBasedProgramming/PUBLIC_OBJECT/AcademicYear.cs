@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PUBLIC_OBJECT
+﻿namespace PUBLIC_OBJECT
 {
-    class AcademicYear
+    public class AcademicYear
     {
+        public int id_year;
+        public string year;
+        public bool status;
     }
 }

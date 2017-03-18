@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PUBLIC_OBJECT
+﻿namespace PUBLIC_OBJECT
 {
-    class TeacherUser
+    public class TeacherUser
     {
+        public int id_teacher;
+        public string name;
+        public bool status;
+        public string phone;
+        public string email;
+        public string password;
+        public string detail;
+        public string gender;
+        public bool admin;
     }
 }
