@@ -85,6 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CompilerAndRunner.cs" />
+    <Compile Include="Forms\ChooseSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseSubject.Designer.cs">
+      <DependentUpon>ChooseSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
