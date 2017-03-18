@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CompilerAndRunner.cs" />
     <Compile Include="Forms\LoginUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,7 +167,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>

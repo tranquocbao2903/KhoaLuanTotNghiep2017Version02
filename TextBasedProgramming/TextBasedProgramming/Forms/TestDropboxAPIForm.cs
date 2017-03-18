@@ -257,10 +257,12 @@ namespace TextBasedProgramming.Forms
 
             //webBrowser1.Document.Write(result.ToString());
             //webBrowser1.Visible = true;
-            byte[] toBytes = System.Text.ASCIIEncoding.UTF8.GetBytes(result.ToString()); //Encoding.Default.GetBytes(result.ToString());    
+            //byte[] toBytes = System.Text.ASCIIEncoding.UTF8.GetBytes(result.ToString()); //Encoding.Default.GetBytes(result.ToString());    
             //webBrowser1.DocumentStream = new MemoryStream(result.ToBinary());
             PdfCommon.Initialize();
             pdfViewer1.LoadDocument(result.ToBinary());
+            //pdfViewer1.LoadDocument(@"E:\Genk.pdf", null);
+            //pdfViewer1.LoadDocument()
             //webBrowser1.DocumentStream = new MemoryStream(result.ToBinary());
             //File.WriteAllBytes(@"D:\testpdf.pdf", result.ToBinary());
         }
